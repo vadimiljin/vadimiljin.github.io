@@ -7,20 +7,19 @@
 
 theme: minimal
 day_night: false
-font: ''
+font: native
 font_size: L
 
 # SEO
 
-site_type: Person
-local_business_type: ''
-org_name: ''
-description: ''
+site_type: LocalBusiness
+local_business_type: 'ProfessionalService'
+org_name: 'SEO services by Vadim Iljin'
+description: 'Search Engines Optimization services'
 twitter: ''
 
 # Contact (edit or remove options as required)
 
-phone: 37255545444
 appointment_url: 'https://calendly.com/vadimiljin'
 contact_links:
   - icon: keybase
