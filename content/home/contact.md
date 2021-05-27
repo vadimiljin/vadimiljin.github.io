@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 130
 
-title: Contact
-subtitle:
+title: Drop me a message
+subtitle: for an independent outside view on your project
 
 content:
   # Automatically link email and phone or display as text?
@@ -18,9 +18,9 @@ content:
   
   # Email form provider
   form:
-    provider: netlify
+    provider: formspree
     formspree:
-      id:
+      id: xwkaolpr
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: false

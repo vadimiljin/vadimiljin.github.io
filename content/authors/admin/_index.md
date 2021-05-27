@@ -1,39 +1,42 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Vadim Iljin
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: SEO Specialist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: vadimiljin.eu
+  url: https://www.vadimiljin.eu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: SEO consulting, audit, cybersecurity research and perimeter monitoring.
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Search Engines Optimization (SEO)
+- Business Intelligence (BI)
+- Free and open-source software (FOSS)
+- Open Source Intelligence (OSINT)
+- Vulnerability Research
+- Ethical Hacking
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Information Technology
+    institution: Estonia Ministry of Justice
+    year: 2005
+  - course: CyberSecurity
+    institution: Estonian Police
+    year: 2000
+  - course: Bachelor of Economics
+    institution: EABC
+    year: 1995
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -43,18 +46,13 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '/#contact'
-- icon: twitter
+- icon: keybase
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://keybase.com/vadimiljin
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://github.com/vadimiljin
+
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -69,9 +67,38 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
+Vadim Iljin is a SEO specialist and a security researcher in Tallinn, Estonia. He has been a self-starter since the nineties. He went on to learn Perl, C++, PHP, JavaScript, Python and most recently Go. He has worked with WordPress (for 15 years), Kubernetes, Docker and Docker-Compose.
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+{{% callout note %}}
+Vadim's SEO services are tailored to mature customers who need to stay on top of competition.
+{{% /callout %}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+## Search engine optimization
+Leverage unique historical dig data for your profit. Vadim can give you actionable insight to help you optimize your website and marketing efforts.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+## Local SEO and Global SEM
+Search Engines Optimization of your sites for profitable keywords in any language - easy!
+
+## Keyword Research
+Vadim discovers money keywords to optimize your site for, using 17 most important methods and metrics.
+
+## Competition Analysis
+In-Depth Business Intelligence. Vadim uncovers everything about your competitors’ ads, keywords, rankings, backlinks, content, strategy and tactics. So you can implement their working techniques and solutions for yourself.
+
+## SEO Rank Tracking
+Vadim monitors vital rankings in 300+ search engines, match keywords to landing pages and track historical progress.
+
+## Google AdWords, Google Analytics and Search Console SEO
+Vadim can get detailed stats on your competition, search volume, CPC, page visits, bounce rates, traffic through keywords and backlinks.
+
+## SEO & Technical Site Audit
+Vadim provides a “how to fix” instructions for problems like poor redirects, broken links, validation or crawing issues.
+
+## Social Media Stats
+Analyze pages and backlinks popularity in Facebook, Twitter, Linkedin, Pinterest and other social networks with Vadim's help.
+
+## Web Content & HTML Optimization
+Optimize landing pages for target keywords based on your top ranking competitors and best SEO practices based on Vadim's advice.
+
+## Backlink Research & Audit
+Backlinks to your site at real-time pulse. Measure everything important and gain valuable insights. Vadim can obtain data from the largest commercially available backlink databases
