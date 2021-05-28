@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Printify.com Demo audit"
-subtitle: ""
+subtitle: "A well built out SEO strategy is the most cost effective way to acquire customers for your business"
 summary: ""
 authors: []
 tags: []
