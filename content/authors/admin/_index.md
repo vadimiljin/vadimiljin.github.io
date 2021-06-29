@@ -10,8 +10,8 @@ role: SEO Specialist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: vadimiljin.eu
-  url: https://www.vadimiljin.eu/
+- name: vadimiljin.com
+  url: https://vadimiljin.com/
 
 # Short bio (displayed in user profile at end of posts)
 bio: SEO consulting, audit, cybersecurity research and perimeter monitoring.

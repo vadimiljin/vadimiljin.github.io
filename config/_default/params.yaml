@@ -125,6 +125,7 @@ marketing:
 cms:
   branch: master
   local_backend: false
+  netlify_cms: false
 icon:
   pack:
     ai: false
