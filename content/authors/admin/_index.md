@@ -14,15 +14,13 @@ organizations:
   url: https://vadimiljin.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: SEO consulting, audit, cybersecurity research and perimeter monitoring.
+bio: SEO consulting, audit, data analysis, cybersecurity research and perimeter monitoring.
 
 # Interests to show in About widget
 interests:
 - Search Engines Optimization (SEO)
 - Business Intelligence (BI)
-- Free and open-source software (FOSS)
-- Open Source Intelligence (OSINT)
-- Vulnerability Research
+- Data Science
 - Ethical Hacking
 
 # Education to show in About widget
@@ -67,7 +65,7 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-Vadim Iljin is a SEO specialist and a security researcher in Tallinn, Estonia. He has been a self-starter since the nineties. He went on to learn Perl, C++, PHP, JavaScript, Python and most recently Go. He has worked with WordPress (for 15 years), Kubernetes, Docker and Docker-Compose.
+Vadim Iljin is a SEO specialist and a security researcher in Tallinn, Estonia. He has been a self-starter since the nineties. He went on to learn Perl, PHP, JavaScript and Python. He has worked with WordPress (for 20 years), Kubernetes, Docker and Docker-Compose.
 
 {{% callout note %}}
 Vadim's SEO services are tailored to mature customers who need to stay on top of competition.
