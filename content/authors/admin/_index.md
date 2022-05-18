@@ -65,7 +65,7 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-Vadim Iljin is a SEO specialist and a security researcher in Tallinn, Estonia. He has been a self-starter since the nineties. He went on to learn Perl, PHP, JavaScript and Python. He has worked with WordPress (for 20 years), Kubernetes, Docker and Docker-Compose.
+Vadim Iljin is a SEO specialist and a security researcher in Tallinn, Estonia. He has been a self-starter since the nineties. He went on to learn Perl, PHP, JavaScript and Python. He has worked with WordPress (for 15 years), Kubernetes, Docker and Docker-Compose.
 
 {{% callout note %}}
 Vadim's SEO services are tailored to mature customers who need to stay on top of competition.
