@@ -1,0 +1,169 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Wowchemy 5.2.0 for Hugo"><meta name=google-site-verification content="2AYQxmLGeTMWPBXjWm892gY99bEjCwC-a1K4LhtaXuI"><meta name=author content="Vadim Iljin"><meta name=description content="Keyword Clusterer Create a virtual environment and install necessary packages: python3 -m venv venv source venv/bin/activate pip install flask pandas numpy requests python-dotenv scikit-learn Create a .env file to store your DataForSEO API credentials: DATAFORSEO_API_USERNAME=your_username DATAFORSEO_API_PASSWORD=your_password Create app."><link rel=alternate hreflang=en-us href=https://vadimiljin.com/bailey/><link rel=preconnect href=https://fonts.gstatic.com crossorigin><meta name=theme-color content="#1565c0"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload='this.media="all"'><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload='this.media="all"' disabled><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload='this.media="all"'><link rel=stylesheet href=/css/wowchemy.e6f7b650e2d80724e28cce23c674926c.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-046CB63F45"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}function trackOutboundLink(e,t){gtag("event","click",{event_category:"outbound",event_label:e,transport_type:"beacon",event_callback:function(){t!=="_blank"&&(document.location=e)}}),console.debug("Outbound link clicked: "+e)}function onClickCallback(e){if(e.target.tagName!=="A"||e.target.host===window.location.host)return;trackOutboundLink(e.target,e.target.getAttribute("target"))}gtag("js",new Date),gtag("config","G-046CB63F45",{}),gtag("set",{cookie_flags:"SameSite=None;Secure"}),document.addEventListener("click",onClickCallback,!1)</script><link rel=manifest href=/index.webmanifest><link rel=icon type=image/png href=/media/icon_hue83bdc34a96dece6b116fe161cff75eb_62322_32x32_fill_lanczos_center_3.png><link rel=apple-touch-icon type=image/png href=/media/icon_hue83bdc34a96dece6b116fe161cff75eb_62322_180x180_fill_lanczos_center_3.png><link rel=canonical href=https://vadimiljin.com/bailey/><meta property="twitter:card" content="summary"><meta property="og:site_name" content="Vadim Iljin"><meta property="og:url" content="https://vadimiljin.com/bailey/"><meta property="og:title" content=" | Vadim Iljin"><meta property="og:description" content="Keyword Clusterer Create a virtual environment and install necessary packages: python3 -m venv venv source venv/bin/activate pip install flask pandas numpy requests python-dotenv scikit-learn Create a .env file to store your DataForSEO API credentials: DATAFORSEO_API_USERNAME=your_username DATAFORSEO_API_PASSWORD=your_password Create app."><meta property="og:image" content="https://vadimiljin.com/media/icon_hue83bdc34a96dece6b116fe161cff75eb_62322_512x512_fill_lanczos_center_3.png"><meta property="twitter:image" content="https://vadimiljin.com/media/icon_hue83bdc34a96dece6b116fe161cff75eb_62322_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us"><title>| Vadim Iljin</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=58975061c13c7e9193ee1c44032bca42><script src=/js/wowchemy-init.min.5c87d484a568cb9870aa36d295c02167.js></script><aside class=search-modal id=search><div class=container><section class=search-header><div class="row no-gutters justify-content-between mb-3"><div class=col-6><h1>Search</h1></div><div class="col-6 col-search-close"><a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a></div></div><div id=search-box><input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=Search...></div></section><section class=section-search-results><div id=search-hits></div></section></div></aside><div class=page-header><nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main><div class=container-xl><div class="d-none d-lg-inline-flex"><a class=navbar-brand href=/>Vadim Iljin</a></div><button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span></button><div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class=navbar-brand href=/>Vadim Iljin</a></div><div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content><ul class="navbar-nav d-md-inline-flex"><li class=nav-item><a class=nav-link href=/#about><span>SEO services</span></a></li><li class=nav-item><a class=nav-link href=/#contact><span>Contact</span></a></li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2"><li class=nav-item><a class="nav-link js-search" href=# aria-label=Search><i class="fas fa-search" aria-hidden=true></i></a></li></ul></div></nav></div><div class=page-body><article class=article><div class="article-container pt-3"><h1></h1><div class=article-metadata></div></div><div class=article-container><div class=article-style><h1 id=keyword-clusterer>Keyword Clusterer</h1><ol><li>Create a virtual environment and install necessary packages:</li></ol><pre><code class=language-bash>python3 -m venv venv
+source venv/bin/activate
+pip install flask pandas numpy requests python-dotenv scikit-learn
+</code></pre><ol start=2><li>Create a .env file to store your DataForSEO API credentials:</li></ol><pre><code class=language-makefile>DATAFORSEO_API_USERNAME=your_username
+DATAFORSEO_API_PASSWORD=your_password
+</code></pre><ol start=3><li>Create app.py with the following code:</li></ol><pre><code class=language-python>import os
+import csv
+import json
+import tempfile
+import itertools
+from collections import defaultdict
+from dotenv import load_dotenv
+from flask import Flask, render_template, request, send_file
+import requests
+import pandas as pd
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+load_dotenv()
+app = Flask(__name__)
+
+API_ENDPOINT = &quot;https://api.dataforseo.com/v3/serp/google/organic/live/regular&quot;
+USERNAME = os.environ['DATAFORSEO_API_USERNAME']
+PASSWORD = os.environ['DATAFORSEO_API_PASSWORD']
+
+
+def get_serp_data(keyword, location_name, language_name):
+    response = requests.post(API_ENDPOINT, auth=(USERNAME, PASSWORD), json={
+        &quot;keyword&quot;: keyword,
+        &quot;location_name&quot;: location_name,
+        &quot;language_name&quot;: language_name,
+        &quot;depth&quot;: 1,
+    })
+
+    if response.status_code == 200:
+        return response.json()
+    else:
+        raise Exception(f&quot;API request failed with status code {response.status_code}&quot;)
+
+
+def extract_top_urls(data):
+    items = data.get(&quot;items&quot;, [])
+    urls = [item[&quot;url&quot;] for item in items if item[&quot;type&quot;] == &quot;organic&quot; and 1 &lt;= item[&quot;rank_group&quot;] &lt;= 10]
+    return urls[:10]
+
+
+def cluster_keywords(df, threshold=0.3):
+    vectorizer = TfidfVectorizer()
+    X = vectorizer.fit_transform(df[&quot;urls&quot;].apply(lambda urls: &quot; &quot;.join(urls)))
+    similarity_matrix = cosine_similarity(X)
+
+    groups = defaultdict(set)
+    for i, j in itertools.combinations(range(len(df)), 2):
+        if similarity_matrix[i, j] &gt;= threshold:
+            groups[df.loc[i, &quot;group_name&quot;]].add(df.loc[j, &quot;Keyword&quot;])
+            groups[df.loc[j, &quot;group_name&quot;]].add(df.loc[i, &quot;Keyword&quot;])
+
+    return groups
+
+
+def process_file(file, location_name, language_name, domain_name):
+    df = pd.read_csv(file)
+    df[&quot;urls&quot;] = &quot;&quot;
+
+    for idx, row in df.iterrows():
+        keyword = row[&quot;Keyword&quot;]
+        data = get_serp_data(keyword, location_name, language_name)
+        top_urls = extract_top_urls(data)
+        df.at[idx, &quot;urls&quot;] = json.dumps(top_urls)
+
+    df[&quot;group_name&quot;] = df.apply(lambda row: row[&quot;Keyword&quot;] if row[&quot;Search Volume&quot;] == max(df[&quot;Search Volume&quot;]) else &quot;&quot;, axis=1)
+    groups = cluster_keywords(df)
+
+    with tempfile.NamedTemporaryFile(mode=&quot;w+&quot;, delete=False, newline=&quot;&quot;, suffix=&quot;.csv&quot;) as output_file:
+        writer = csv.writer(output_file)
+        writer.writerow([&quot;Group Name&quot;, &quot;Keyword&quot;, &quot;Search Volume&quot;, &quot;Matched URL&quot;, &quot;Position&quot;])
+
+        for group_name, keywords in groups.items():
+            for keyword in keywords:
+                row = df[df[&quot;Keyword&quot;] == keyword].iloc[0]
+                urls = json.loads(row[&quot;urls&quot;])
+                matched_url, position = &quot;&quot;, &quot;&quot;
+                for idx, url in enumerate(urls):
+                    if domain_name.lower() in url.lower():
+                        matched_url = url
+                    position = idx + 1
+                    break
+
+            writer.writerow([group_name, row[&quot;Keyword&quot;], row[&quot;Search Volume&quot;], matched_url, position])
+
+    return output_file.name
+
+
+@app.route(&quot;/&quot;, methods=[&quot;GET&quot;, &quot;POST&quot;])
+def index():
+    if request.method == &quot;POST&quot;:
+        file = request.files[&quot;csv_file&quot;]
+        location_name = request.form[&quot;location_name&quot;]
+        language_name = request.form[&quot;language_name&quot;]
+        domain_name = request.form[&quot;domain_name&quot;]
+    try:
+        output_file_path = process_file(file, location_name, language_name, domain_name)
+        return send_file(output_file_path, as_attachment=True, attachment_filename=&quot;output.csv&quot;, cache_timeout=0)
+    except Exception as e:
+        return f&quot;Error: {str(e)}&quot;, 400
+
+return render_template(&quot;index.html&quot;)
+
+if __name__ == '__main__':
+	app.run(debug=True)
+</code></pre><ol start=4><li>Create a <code>templates</code> folder and add an <code>index.html</code> file with the following code:</li></ol><pre><code class=language-html>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Keyword Clustering&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Keyword Clustering&lt;/h1&gt;
+    &lt;form method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+        &lt;label for=&quot;location_name&quot;&gt;Location Name:&lt;/label&gt;
+        &lt;select name=&quot;location_name&quot;&gt;
+            &lt;!-- Add country names as options here --&gt;
+        &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;language_name&quot;&gt;Language Name:&lt;/label&gt;
+        &lt;select name=&quot;language_name&quot;&gt;
+            &lt;!-- Add Google languages as options here --&gt;
+        &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;domain_name&quot;&gt;Domain Name:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;domain_name&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;keywords_file&quot;&gt;Keywords File (CSV):&lt;/label&gt;
+        &lt;input type=&quot;file&quot; name=&quot;keywords_file&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type=&quot;submit&quot; value=&quot;Cluster Keywords&quot;&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Replace the <code>&lt;!-- Add country names as options here --></code> and <code>&lt;!-- Add Google languages as options here --></code> comments with the appropriate <code>&lt;option></code> elements for countries and languages.</p><ol start=5><li>Run the Flask app:</li></ol><pre><code class=language-bash>export FLASK_APP=app.py
+export FLASK_ENV=production
+flask run --host=0.0.0.0 --port=8000
+</code></pre><p>Access the web application in your browser at http://0.0.0.0:8000/ and upload a CSV file with the required columns.</p><p>The app will process the CSV file, cluster the keywords, and return a new CSV file with the specified columns.</p></div><div class=share-box aria-hidden=true><ul class=share><li><a href="https://twitter.com/intent/tweet?url=https://vadimiljin.com/bailey/&amp;text=" target=_blank rel=noopener class=share-btn-twitter><i class="fab fa-twitter"></i></a></li><li><a href="https://www.facebook.com/sharer.php?u=https://vadimiljin.com/bailey/&amp;t=" target=_blank rel=noopener class=share-btn-facebook><i class="fab fa-facebook"></i></a></li><li><a href="mailto:?subject=&amp;body=https://vadimiljin.com/bailey/" target=_blank rel=noopener class=share-btn-email><i class="fas fa-envelope"></i></a></li><li><a href="https://www.linkedin.com/shareArticle?url=https://vadimiljin.com/bailey/&amp;title=" target=_blank rel=noopener class=share-btn-linkedin><i class="fab fa-linkedin-in"></i></a></li><li><a href="whatsapp://send?text=%20https://vadimiljin.com/bailey/" target=_blank rel=noopener class=share-btn-whatsapp><i class="fab fa-whatsapp"></i></a></li><li><a href="https://service.weibo.com/share/share.php?url=https://vadimiljin.com/bailey/&amp;title=" target=_blank rel=noopener class=share-btn-weibo><i class="fab fa-weibo"></i></a></li></ul></div></div></article></div><div class=page-footer><div class=container><footer class=site-footer><p class=powered-by>&copy; 2016 - 2023 Vadim Iljin</p><p class=powered-by></p></footer></div></div><div id=modal class="modal fade" role=dialog><div class=modal-dialog><div class=modal-content><div class=modal-header><h5 class=modal-title>Cite</h5><button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=modal-body><pre><code class="tex hljs"></code></pre></div><div class=modal-footer><a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank><i class="fas fa-copy"></i> Copy</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank><i class="fas fa-download"></i> Download</a><div id=modal-error></div></div></div></div></div><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js></script>
+<script id=search-hit-fuse-template type=text/x-template>
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script><script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js></script>
+<script src=/en/js/wowchemy.min.26bc5a5b73c468c9e767656a378ac5e3.js></script></body></html>
